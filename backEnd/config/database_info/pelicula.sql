@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 27-05-2021 a las 23:46:46
+-- Tiempo de generación: 05-06-2021 a las 00:58:16
 -- Versión del servidor: 10.4.18-MariaDB
 -- Versión de PHP: 8.0.3
 
@@ -18,16 +18,16 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `pelicula`
+-- Base de datos: `peliculas`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `peliculas`
+-- Estructura de tabla para la tabla `pelicula`
 --
 
-CREATE TABLE `peliculas` (
+CREATE TABLE `pelicula` (
   `idPelicula` int(11) NOT NULL,
   `nombre` varchar(255) NOT NULL,
   `img` varchar(255) DEFAULT NULL,
@@ -39,9 +39,9 @@ CREATE TABLE `peliculas` (
 --
 
 --
--- Indices de la tabla `peliculas`
+-- Indices de la tabla `pelicula`
 --
-ALTER TABLE `peliculas`
+ALTER TABLE `pelicula`
   ADD PRIMARY KEY (`idPelicula`);
 
 --
@@ -49,10 +49,10 @@ ALTER TABLE `peliculas`
 --
 
 --
--- AUTO_INCREMENT de la tabla `peliculas`
+-- AUTO_INCREMENT de la tabla `pelicula`
 --
-ALTER TABLE `peliculas`
-  MODIFY `idPelicula` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `pelicula`
+  MODIFY `idPelicula` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
