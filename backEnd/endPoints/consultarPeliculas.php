@@ -5,7 +5,7 @@ header("Access-Control-Allow-Headers: access");
 header("Access-Control-Allow-Methods: GET");
 header("Access-Control-Allow-Credentials: true");
 header('Content-Type: application/json');
-
+error_reporting(0);
 // include database and object files
 include_once '../config/db_connection.php';
 include_once '../object/pelicula_conn.php';
